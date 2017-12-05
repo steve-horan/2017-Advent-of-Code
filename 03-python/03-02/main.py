@@ -58,7 +58,6 @@ def main():
             pos["n"] = summ
             grid.append(pos.copy())
             num = num + 1
-            print(summ)
             if summ > 289326:
                 print(num)
                 sys.exit(0)
