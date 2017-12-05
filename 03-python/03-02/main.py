@@ -59,7 +59,7 @@ def main():
             grid.append(pos.copy())
             num = num + 1
             if summ > 289326:
-                print(num)
+                print(summ)
                 sys.exit(0)
                 
         if index == 3:
