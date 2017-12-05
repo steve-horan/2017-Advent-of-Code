@@ -5,7 +5,7 @@ order = ("right", "up", "left", "down")
 
 def move(action, pos):
     m = moves[order[action]]
-    print(m, order[action])
+    #print(m, order[action])
     if m["x"] == "+":
         pos["x"] = pos["x"] + 1
     if m["x"] == "-":
@@ -23,11 +23,13 @@ def main():
     index = 0
     factor = 1
     tick = 1
-    while num <= 10:
+    while num <= 289326:
         for _ in range(factor):
             pos = move(index, pos)
             num = num + 1
-            print(pos, num)
+            if num == 289326:
+                print(pos, num)
+                print(abs(pos['x']) + abs(pos['y']))
 
         if index == 3:
             index = 0
