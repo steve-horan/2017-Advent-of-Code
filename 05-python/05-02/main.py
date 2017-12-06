@@ -15,7 +15,7 @@ while index < len(register):
     else:
         register[currind] = int(register[currind]) + 1
     step = step + 1
-    if index >= len(register):
+    if index > len(register):
         print(step)
 
 
